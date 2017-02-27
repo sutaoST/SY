@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>毕业季相册</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link  rel="stylesheet" href="css/reset.min.css">
+    <link  rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/all.js"></script>
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        /*-webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;*/
+    }
+    </style>
+</head>
+<body>
+<div class="music muc">
+    <span id='musics' class='iconfont icon-yingfu'></span>
+    <audio src="http://res1.eqh5.com/8903277c1f7d464eb5a462e1102ac843.mp3
+" autoplay="autoplay" loop="loop" controls="controls" preload id="music" hidden></audio>
+</div>
+<script>
+    $(function(){
+            var audio=document.getElementsByTagName('audio')[0];
+            $('.music').click(function(){
+                if(audio.paused){
+                    audio.play();
+                    $(this).attr('class','music muc')
+                }else{
+                    audio.pause();
+                    $(this).attr('class','music')
+                }
+
+            });
+        });
+    </script>
+    <!-- Swiper -->
+    <div class="swiper-container container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+             <!--第一页-->
+                <div class="page page0 cur">
+                    <div class="ani head" swiper-animate-effect="bounceInDown">
+                        <img src="images/01.png" style="width: 425px;">
+                        <!--<div class='music'>-->
+                            <!--<span id='musics' class='iconfont icon-yingfu'></span>-->
+                        <!--</div>-->
+                        <!--<audio  id="media" loop="" autoplay="" preload="auto" src="http://res1.eqh5.com/8903277c1f7d464eb5a462e1102ac843.mp3"> </audio>-->
+                        <div class="articls">
+                            <div class="pic-1">
+                                <img  id="img-06" class="ani img-06" swiper-animate-effect="bounceInDown" src="images/06.png">
+                                <img  id="img5" class="ani img-08" swiper-animate-effect="bounceInDown" src="images/08.png">
+                                <img  id="img4" class="ani img-04" swiper-animate-effect="fadeIn" src="images/04.png">
+                                <img  id="img5" class="ani" swiper-animate-effect="bounceInLeft" src="images/11.png">
+                                <img  id="img5" class="ani img-05" swiper-animate-effect="bounceInRight" src="images/05.png">
+                                <img  id="img4" class="ani img-07" swiper-animate-effect="fadeIn" src="images/07.png">
+                                <img class="img-09" src="images/09png.png">
+                                <img id="img-06" class="ani img-10" swiper-animate-effect="bounceInRight" src="images/10.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ani bottom" swiper-animate-effect="bounceInUp"><img src="images/02.png"> </div>
+                </div></div>
+            <div class="swiper-slide">
+                     <!--第二页-->
+            <div class="page page0 page1">
+                <div class="page-img"></div>
+                <ul class='page-1-head'>
+                    <li class='head-img1'><img id="img-12" class='ani' swiper-animate-effect="bounceInLeft" src="images/12.png"><span class='senior'>毕业季</span></li>
+                    <li id="arts" class='ani' swiper-animate-effect="bounceIn">
+                        <div style='text-align:center;'><span style="color: rgb(46, 203, 190); font-size: 12px; background-color: initial; text-align:center;">时光匆匆，抓不住，留不住，那些开心的，悲伤的嬉笑的，彷徨的，是我们的青春，如今</span></div>
+                        <div style='text-align:center;'><span style="color: rgb(46, 203, 190); font-size: 12px; background-color: initial;">挥手告别过去，挥不去你青涩的面孔</span></div>
+                        <div style='text-align:center;'><span style="color: rgb(46, 203, 190); font-size: 12px; background-color: initial;">还有四年的形影不离，青春的日子里</span></div>
+                        <div style='text-align:center;'><span style="color: rgb(46, 203, 190); font-size: 12px; background-color: initial;">有你陪我一起疯狂，记忆凝成画卷</span></div>
+                        <div style='text-align:center;'><span style="color: rgb(46, 203, 190); font-size: 12px; background-color: initial;">美得不敢触摸！</span></div>
+                    </li>
+                    <li class='bottom-page1'>
+                        <div style="text-align: center;">
+                            <img id="img-16" class="ani img-16 " swiper-animate-effect="bounceIn" src="images/16.png">
+                            <span class="bottom-jl">毕业季，记录最美的我们！</span></div>
+                    </li>
+                </ul>
+            </div></div>
+            <div class="swiper-slide">
+                 <!--第三页-->
+                <div class="page page0 page2">
+                   <div class="page3-head"><img class="ani" swiper-animate-effect="bounceInDown" src="images/13.jpg" ></div>
+                    <div style="text-align: center;" class="summer-head">
+                        <span class="summer">我们在一起的最后一个夏天</span>
+                        <span class="say-bay">毕业,不说再见</span></div>
+                    <div class="page3-bottom"><img class="ani" swiper-animate-effect="bounceInUp" src="images/17.png">
+                        <span id="students" class="ani students" swiper-animate-effect="bounceInUp">献给所有的同学</span>
+                        <div class="students-pic"><img id="ig-19" class="ani" swiper-animate-effect="bounceInUp" src="images/19.jpg" style="width: 225px; height: 143px; margin-top: 0px; margin-left: -0.5px;"></div>
+                        <div class="kj"><img id="ig-19" class="ani" swiper-animate-effect="bounceInUp" src="images/18.png" style="width: 262px;height: 205px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                  <!--第四页-->
+            <div class="page page0 page3">
+                <div class="page3-head"><img class="ani" swiper-animate-effect="bounceInDown" src="images/13.jpg" ></div>
+                <div class="page3-bottom"><img class="ani" swiper-animate-effect="bounceInUp" src="images/17.png"></div>
+                <div class="byj"><div style="width: 100%;height: 100%;transform: none;opacity: 1" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration:"1s" swiper-animate-timing-function:"ease" swiper-animate-delay="1s">
+                    <img style="width: 182px; height: 304px;" src="images/20.png"></div></div>
+            
+        </div></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+         var mySwiper = new Swiper ('.swiper-container', {
+             pagination: '.swiper-pagination',
+             paginationClickable: true,
+             direction: 'vertical',
+
+              onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+                swiperAnimateCache(swiper); //隐藏动画元素 
+                swiperAnimate(swiper); //初始化完成开始动画
+              }, 
+
+              onSlideChangeEnd: function(swiper){ 
+                swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+              } 
+
+          })        
+    </script>
+</body>
+</html>
